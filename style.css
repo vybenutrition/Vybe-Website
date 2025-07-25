@@ -8,9 +8,10 @@ color: #333;
 }
 header {
 background: #2d2d2d;
-color: #fff;
-padding: 50px 20px;
+color: green;
+padding: 20px;
 text-align: center;
+  color: white; 
 }
 header .btn {
 display: inline-block;
