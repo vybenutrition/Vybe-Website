@@ -43,3 +43,49 @@ padding: 20px;
 background: #eee;
 font-size: 0.9em;
 }
+/* --- Subscribe Section Styling --- */
+#subscribe {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#subscribe h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+#subscribe p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ml-embedded form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ml-embedded input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.ml-embedded button {
+  background-color: #000; /* change this to your brand color */
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.ml-embedded button:hover {
+  background-color: #444;
+}
+
