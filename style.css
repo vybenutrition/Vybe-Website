@@ -58,26 +58,90 @@ footer {
   font-size: 0.9em;
 }
 
-/* --- Subscribe Section Styling --- */
+/* ---------- Subscribe Card (container) ---------- */
 #subscribe {
-  max-width: 600px;
-  margin: 50px auto;
+  max-width: 640px;
+  margin: 48px auto;
+  padding: 28px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
   text-align: center;
-  padding: 30px;
-  background: #f9f9f9;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-
 #subscribe h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #2d2d2d;
+  margin: 0 0 8px;
+  font-size: 1.9rem;
+  color: #1f2937;
+}
+#subscribe p {
+  margin: 0 0 18px;
+  color: #4b5563;
 }
 
-#subscribe p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-  color: #555;
+/* ---------- MailerLite form (inputs + button) ---------- */
+#subscribe .ml-form-embedContainer .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #111827;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+#subscribe .ml-form-embedContainer .form-control:focus {
+  border-color: #00b894;
+  box-shadow: 0 0 0 3px rgba(0,184,148,0.15);
+}
+
+#subscribe .ml-form-embedContainer .ml-form-formContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+#subscribe .ml-form-embedContainer .ml-form-embedSubmit {
+  margin-top: 10px;
+}
+
+#subscribe .ml-form-embedContainer button.primary {
+  width: 100%;
+  background-color: #00b894;
+  color: #fff;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .25s ease, transform .02s ease;
+}
+#subscribe .ml-form-embedContainer button.primary:hover {
+  background-color: #009e7a;
+}
+#subscribe .ml-form-embedContainer button.primary:active {
+  transform: translateY(1px);
+}
+
+/* Success message */
+#subscribe .ml-form-successBody {
+  text-align: center;
+}
+#subscribe .ml-form-successBody h4 {
+  margin: 6px 0 8px;
+  font-size: 1.4rem;
+  color: #1f2937;
+}
+#subscribe .ml-form-successBody p {
+  margin: 0;
+  color: #4b5563;
+}
+
+/* --- Mobile tweaks --- */
+@media (max-width: 480px) {
+  #subscribe { padding: 22px; margin: 36px auto; }
+  #subscribe h2 { font-size: 1.6rem; }
 }
