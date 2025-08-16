@@ -46,6 +46,38 @@ section {
   background: #e0f7fa;
   margin: 10px 0;
   padding: 10px;
-  border-left: 5px solid #00b8
+  border-left: 5px solid #00b894;
+  border-radius: 4px;
+}
 
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  font-size: 0.9em;
+}
 
+/* --- Subscribe Section Styling --- */
+#subscribe {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+#subscribe h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+}
+
+#subscribe p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #555;
+}
