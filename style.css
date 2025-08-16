@@ -1,91 +1,51 @@
+/* --- Base Styles --- */
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-line-height: 1.6;
-background: #fdfdfd;
-color: #333;
-}
-header {
-background: #2d2d2d;
-color: green;
-padding: 20px;
-text-align: center;
-  color: white; 
-}
-header .btn {
-display: inline-block;
-margin-top: 20px;
-background: #00b894;
-color: #fff;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 5px;
-}
-section {
-padding: 40px 20px;
-max-width: 800px;
-margin: auto;
-}
-.samples ul {
-list-style-type: none;
-padding: 0;
-}
-.samples li {
-background: #e0f7fa;
-margin: 10px 0;
-padding: 10px;
-border-left: 5px solid #00b894;
-}
-footer {
-text-align: center;
-padding: 20px;
-background: #eee;
-font-size: 0.9em;
-}
-/* --- Subscribe Section Styling --- */
-#subscribe {
-  max-width: 600px;
-  margin: 50px auto;
-  text-align: center;
-  padding: 20px;
-}
-
-#subscribe h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-#subscribe p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fdfdfd;
   color: #333;
 }
 
-.ml-embedded form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+header {
+  background: #2d2d2d;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.ml-embedded input {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 1em;
-}
-
-.ml-embedded button {
-  background-color: #000; /* change this to your brand color */
+header .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #00b894;
   color: #fff;
-  padding: 12px;
-  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
   border-radius: 5px;
-  font-size: 1.1em;
-  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.ml-embedded button:hover {
-  background-color: #444;
+header .btn:hover {
+  background: #009e7a;
 }
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* --- Sample Plans --- */
+.samples ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.samples li {
+  background: #e0f7fa;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #00b8
+
 
