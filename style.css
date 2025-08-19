@@ -217,5 +217,18 @@ footer {
 .center {
   text-align: center;
 }
-
+/* Placeholder avatar with initials */
+.t-avatar.placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #555;
+}
 
