@@ -120,30 +120,21 @@ footer {
 .ml-form-embedSubmit button.primary:hover {
   background: #009e7a;
 }
-/* --- Testimonials Cleanup --- */
 
-/* Center the section heading */
+/* --- Testimonials --- */
 .testimonials-featured h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-/* Grid container */
 .testimonials-grid {
-  display: grid;
+  display: flex;              /* instead of grid */
+  justify-content: center;    /* centers the single testimonial */
+  flex-wrap: wrap;            /* still allows wrapping if you add more */
   gap: 2rem;
-  grid-template-columns: 1fr;
-  justify-items: center;
 }
 
-@media (min-width: 768px) {
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Testimonial card */
 .testimonial {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -157,7 +148,6 @@ footer {
   text-align: center;
 }
 
-/* Top area with photo + name */
 .t-header {
   display: flex;
   flex-direction: column;
@@ -165,7 +155,6 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* Avatar (photo) styling */
 .t-avatar {
   width: 90px;
   height: 90px;
@@ -177,7 +166,6 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Placeholder look if no image */
 .t-avatar[src=""], .t-avatar:not([src]) {
   background: #e5e7eb;
   display: flex;
@@ -187,7 +175,6 @@ footer {
   font-size: 0.8rem;
 }
 
-/* Name + role */
 .t-name {
   font-weight: 700;
   font-size: 1.1rem;
@@ -197,14 +184,14 @@ footer {
   color: #6b7280;
 }
 
-/* Quote */
 .t-quote {
   font-style: italic;
   color: #374151;
   line-height: 1.6;
   font-size: 1rem;
 }
-/* Stack CTAs vertically and center them */
+
+/* --- CTA Buttons --- */
 .cta-stack {
   display: flex;
   flex-direction: column;
@@ -212,14 +199,23 @@ footer {
   gap: 12px;
 }
 
-/* Ensure .btn is a block-level button and centered */
 .btn {
   display: inline-block;
   padding: .75rem 1.1rem;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
-  /* keep whatever green you already use; if you need it, uncomment next line */
-  /* background: #22c55e; color:#fff; */
+  background: #00b894;
+  color: #fff;
+  transition: background 0.3s ease;
 }
+
+.btn:hover {
+  background: #009e7a;
+}
+
+.center {
+  text-align: center;
+}
+
 
